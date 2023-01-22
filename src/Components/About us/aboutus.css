@@ -1,0 +1,363 @@
+.intro {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    padding: 0;
+  }
+
+  .callToAction {
+    height: 93vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    z-index: -1;
+  }
+  
+  .callToAction button {
+    background-color: var(--color1);
+    color: var(--textcolor);
+    height: 4rem;
+    width: 15rem;
+    border-radius: 10px;
+    font-size: x-large;
+    cursor: pointer;
+  }
+  
+  .calltext {
+    position: absolute;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    left: 20rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .calltext i {
+    color: var(--color2);
+    text-align: start;
+  }
+  .calltext h6 {
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 2rem;
+    color: var(--color3);
+  }
+
+  .calltext p {
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 2rem;
+    color: rgb(34, 33, 33);
+  }
+  p {
+    color: #2c2a2a;
+    text-align: start;
+  }
+
+  .calltext1 {
+    position: absolute;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    left: 20rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .calltext h1 {
+    font-size: 4rem;
+    padding: 5px;
+    font-weight: 700;
+    color: #131212;
+    text-align: start;
+  }
+  .calltext1 h1 {
+    font-size: 4rem;
+    padding: 5px;
+    font-weight: 700;
+    color: black;
+    text-align: start;
+  }
+  .calltext1 .hero-title {
+    color: #1c3fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+  
+  .callimg img {
+    position: absolute;
+
+    opacity: .3;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .calltext1 {
+      top: 10rem;
+      left: 12rem;
+    }
+    .callimg {
+      padding-left: 45rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .calltext {
+      position: absolute;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      top: 10rem;
+      left: 10rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .callimg {
+      padding: 0 0 4rem 45rem;
+    }
+    .portfolio-card {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1145px) {
+    .calltext1 {
+      left: 8rem;
+    }
+    .callimg {
+      padding-left: 40rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .callimg img {
+      width: 300px;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .calltext {
+      position: absolute;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      top: 7rem;
+      left: 8rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .calltext h1 {
+      font-size: 2rem;
+      padding: 5px;
+      font-weight: 900;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .calltext {
+      position: absolute;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      top: 5rem;
+      left: 6rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .calltext h1 {
+      font-size: 2rem;
+      padding: 5px;
+      font-weight: 900;
+    }
+    .calltext1 {
+      position: absolute;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      top: 5rem;
+      left: 6rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .intro {
+      height: 80vh;
+      width: auto;
+      display: flex;
+      padding: 0;
+      margin-bottom: 30rem;
+    }
+  }
+  
+  @media only screen and (max-width: 569px) {
+    .calltext {
+      position: absolute;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      top: 3rem;
+      left: 3rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .calltext h1 {
+      font-size: 1.5rem;
+      padding: 5px;
+      font-weight: 900;
+    }
+    .calltext1 {
+      position: absolute;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      top: 3rem;
+      left: 3rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .intro {
+      height: 60vh;
+      width: auto;
+      display: flex;
+      padding: 0;
+      margin-bottom: 50rem;
+    }
+  }
+
+
+
+    /* -----------companies---------  */
+    .company {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        margin-bottom: 15rem;
+      }
+      .company h3{
+        color: var(--color5);
+      }
+      .companyLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+        flex-wrap: wrap;
+      }
+      #compLogo {
+        height: auto;
+        width: 12rem;
+        padding: 2rem;
+      }
+      
+      .company1 {
+        margin-top: 0;
+        margin-bottom: 300px;
+      }
+      
+      @media screen and (max-width: 700px) {
+        .companyLogo {
+          height: 5rem;
+          width: auto;
+          padding: 0.5rem;
+          /* overflow-x: scroll; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #compLogo {
+          height: 5rem;
+          width: auto;
+          padding: 0.5rem;
+        }
+        .company {
+            text-align: center;
+            margin-top: 1rem;
+            padding: 1rem;
+            padding-bottom: 30rem;
+          }
+      }
+  
+      
+    /* portfolio */
+
+    .portfolio-card {
+        display: grid;
+        grid-template-columns: repeat(5, 200px);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+      
+      .card {
+        width: 190px;
+        height: 254px;
+        background-color: var(--color1);
+        border-radius: 15px;
+        box-shadow: 1px 5px 60px 0px #100a886b;
+      }
+      
+      .card .card-border-top {
+        width: 60%;
+        height: 3%;
+        background-color: var(--color2);
+        margin: auto;
+        border-radius: 0px 0px 15px 15px;
+      }
+      
+      .card span {
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+        font-size: 16px;
+      }
+      
+      .card .job {
+        font-weight: 400;
+        color: white;
+        display: block;
+        text-align: center;
+        padding-top: 3px;
+        font-size: 12px;
+      }
+      
+      .card img {
+        width: 70px;
+        height: 80px;
+        background: #6b64f3;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 25px;
+      }
+      
+      .card button {
+        padding: 8px 25px;
+        display: block;
+        margin: auto;
+        border-radius: 8px;
+        border: none;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: var(--color2);
+        color: white;
+        font-weight: 600;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .card button:hover {
+        background-color: var(--color3);
+      }
+
