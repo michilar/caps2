@@ -1,6 +1,6 @@
 import React from 'react'
 import './login.css'
-import './sign'
+// import './sign'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
