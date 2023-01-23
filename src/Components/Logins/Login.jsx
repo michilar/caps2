@@ -5,8 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Login = () => {
-  return (
 	
+	const overlay = () =>{
+		const wrapper = document.getElementById('wrapper');
+		wrapper.classList.add("right-panel-active");
+	}
+	const overlay2 = () =>{
+		const wrapper = document.getElementById('wrapper');
+		wrapper.classList.remove("right-panel-active");
+	}
+	
+	return (
     <div>
 		<div class="signbody">
 			
@@ -41,7 +50,7 @@ const Login = () => {
 	<input type="password" name="password" placeholder="Password"/>
 	<a href="/">Forgot Your Password</a>
 
-	<button>Sign In</button>
+	<button >Sign In</button>
 	</form>
 </div>
 <div class="overlay-wrapper">
@@ -49,12 +58,12 @@ const Login = () => {
 		<div class="overlay-panel overlay-left">
 			<h1>Welcome Back!</h1>
 			<p>To keep connected with us please login with your personal info</p>
-			<button class="ghost" id="signIn">Sign In</button>
+			<button  onClick={overlay2} class="ghost" id="signIn">Sign In</button>
 		</div>
 		<div class="overlay-panel overlay-right">
 			<h1>Hello, Friend!</h1>
 			<p>Enter your details and start journey with us</p>
-			<button class="ghost" id="signUp">Sign Up</button>
+			<button onClick={overlay} class="ghost" id="signUp">Sign Up</button>
 		</div>
 	</div>
 </div>
@@ -67,8 +76,13 @@ const Login = () => {
 
 </div>
 
+
     </div>
   )
 }
+
+
+
+
 
 export default Login
